@@ -22,7 +22,7 @@ describe("Movie selection", () => {
 
       cy.get(selectors.movieTitle)
         .then(($el) => $el.textContent)
-        .should("have.text", "Логан");
+        .should("have.text", "Терминатор-заржавел");
 
       cy.get(selectors.movieTitle)
         .invoke("text")
@@ -33,7 +33,7 @@ describe("Movie selection", () => {
             .should("have.text", text);
 
           cy.get(".page-nav__day:nth-of-type(3)").click();
-          cy.get("li").contains("19:00").click();
+          cy.get("li").contains("10:00").click();
 
           current.data.forEach((chair) => {
             cy.get(
@@ -52,6 +52,6 @@ describe("Correct display of the main page", () => {
   });
   it("number of movies per page", () => {
     cy.visit("http://qamid.tmweb.ru");
-    cy.get(".movie").should("have.length", 3);
+    cy.get(".movie").should("have.length", 1);
   });
 });

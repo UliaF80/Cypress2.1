@@ -1,7 +1,7 @@
 {
-  "movieTitle": "[data-film-id='93'] > .conf-step__movie-title",
+  "movieTitle": "[data-film-id='99'] > .conf-step__movie-title",
 
-  "movieTitle2": ":nth-child(2) > .movie__info > .movie__description > .movie__title",
+  "movieTitle2": ".movie > .movie__info > .movie__description > .movie__title",
 
   "schemaChair": "(`.buying-scheme__wrapper > :nth-child(${chair.row}) > :nth-child(${chair.chair})`)"
 }
