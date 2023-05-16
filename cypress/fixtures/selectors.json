@@ -4,4 +4,5 @@
   "movieTitle2": ".movie > .movie__info > .movie__description > .movie__title",
 
   "schemaChair": "(`.buying-scheme__wrapper > :nth-child(${chair.row}) > :nth-child(${chair.chair})`)"
+ 
 }
